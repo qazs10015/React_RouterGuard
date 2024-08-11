@@ -26,7 +26,7 @@ function MyForm() {
 
   return (
     <>
-      <div>try clicking previous-page button on browser after typing anything in input field</div>
+      <h2 style={{ color: 'blue' }}>Try to click previous-page button on browser after typing anything in input field</h2>
       <form onSubmit={handleSubmit(submit)}>
         <div>
           Name：
