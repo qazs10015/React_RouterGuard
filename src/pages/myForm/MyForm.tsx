@@ -25,24 +25,27 @@ function MyForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit(submit)}>
-      <div>
-        Name：
-        <input type="text" {...register('name')} />
-        <span style={{ color: 'red' }}>{errors.name && <p>{errors.name.message}</p>}</span>
-      </div>
-      <div>
-        Email：
-        <input type="text" {...register('email')} />
-        <span style={{ color: 'red' }}>{errors.email && <p>{errors.email.message}</p>}</span>
-      </div>
-      <div>
-        Age：
-        <input type="text" {...register('age')} />
-        <span style={{ color: 'red' }}>{errors.age && <p>{errors.age.message}</p>}</span>
-      </div>
-      <button type="submit">click to submit</button>
-    </form>
+    <>
+      <div>try clicking previous-page button on browser after typing anything in input field</div>
+      <form onSubmit={handleSubmit(submit)}>
+        <div>
+          Name：
+          <input type="text" {...register('name')} />
+          <span style={{ color: 'red' }}>{errors.name && <p>{errors.name.message}</p>}</span>
+        </div>
+        <div>
+          Email：
+          <input type="text" {...register('email')} />
+          <span style={{ color: 'red' }}>{errors.email && <p>{errors.email.message}</p>}</span>
+        </div>
+        <div>
+          Age：
+          <input type="text" {...register('age')} />
+          <span style={{ color: 'red' }}>{errors.age && <p>{errors.age.message}</p>}</span>
+        </div>
+        <button type="submit">click to submit</button>
+      </form>
+    </>
   );
 }
 

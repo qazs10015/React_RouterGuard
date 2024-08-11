@@ -1,10 +1,9 @@
-import { useNavigate } from 'react-router';
 import { NavLink } from 'react-router-dom';
 
 function Root() {
-  const navigate = useNavigate();
   return (
     <>
+      <p>Navigate to MyForm to experience router guard</p>
       <div>
         <NavLink to="/home">Home</NavLink>
       </div>
